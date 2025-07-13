@@ -9,7 +9,9 @@ import lombok.Data;
 @Data
 public class Admin extends User {
     private String name;
+
     @ManyToOne
-    @JoinColumn(name = "branchname_id")
-    private Account branchname;
+    @JoinColumn(name = "branch_id")
+    private Branch branch;
 }
+

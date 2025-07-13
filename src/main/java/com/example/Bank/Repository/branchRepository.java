@@ -1,10 +1,9 @@
 package com.example.Bank.Repository;
 
-import com.example.Bank.Entities.Admin;
+import com.example.Bank.Entities.Branch;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface adminRepository extends JpaRepository<Admin,String> {
-//    boolean existsById(String email);
+public interface branchRepository extends JpaRepository<Branch, Long> {
 }
